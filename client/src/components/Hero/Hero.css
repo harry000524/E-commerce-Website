@@ -1,0 +1,219 @@
+/********************************** HERO PAGE */
+.hero {
+    height: 100vh;
+    width: 100%;
+    background: rgb(209, 228, 209);
+    background: linear-gradient(
+        90deg,
+        rgba(209, 228, 209, 1) 30%,
+        rgba(243, 251, 241, 1) 80%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/********************************** HERO CONTAINER */
+.hero .hero-container {
+    width: 1000px;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/********************************** HERO CONTAINER CONTENT*/
+.hero .hero-container .hero-content {
+    height: 50%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero .hero-container .hero-content h1 {
+    color: var(--text-title-color);
+    font-size: 25px;
+    font-weight: 600;
+    cursor: default;
+}
+
+.hero .hero-container .hero-content i {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 400;
+    cursor: default;
+}
+/********************************** HERO BUTTON */
+.hero .hero-container .hero-content .btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: var(--primary-color);
+    background: var(--btn-color);
+    width: fit-content;
+    font-size: 14px;
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+
+.hero .hero-container .hero-content .btn:hover {
+    color: var(--btn-color);
+    border: 1px solid var(--btn-color);
+    background: transparent;
+}
+/********************************** HERO IMAGE */
+.hero .hero-container .hero-img {
+    height: 350px;
+    width: 500px;
+    overflow: hidden;
+}
+
+.hero .hero-container .hero-img img {
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+.hero .hero-container .hero-img img:hover {
+    transform: scale(1.1);
+}
+/**************************************** MEDIA QUERIES */
+@media screen and (min-width: 2000px) {
+    .hero .hero-container {
+        width: 1000px;
+    }
+    .hero .hero-container .hero-content {
+        width: 100%;
+        margin-right: 2rem;
+    }
+
+    .hero .hero-container .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero .hero-container .hero-content p {
+        font-size: 17px;
+    }
+    /********************************** HERO IMAGE */
+    .hero .hero-container .hero-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .hero .hero-container {
+        width: 900px;
+    }
+    .hero .hero-container .hero-content {
+        width: 100%;
+        height: 60%;
+        padding-right: 2rem;
+    }
+
+    .hero .hero-container .hero-content h1 {
+        font-size: 25px;
+    }
+
+    .hero .hero-container .hero-content p {
+        font-size: 14px;
+    }
+
+    .hero .hero-container .hero-content .btn {
+        font-size: 14px;
+    }
+
+    .hero .hero-container .hero-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .hero .hero-container {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 913px) {
+    .hero .hero-container {
+        width: 600px;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .hero .hero-container .hero-content {
+        margin-bottom: 1rem;
+    }
+
+    .hero .hero-container .hero-content h1 {
+        font-size: 25px;
+    }
+
+    .hero .hero-container .hero-content p {
+        font-size: 14px;
+    }
+
+    .hero .hero-container .hero-content .btn {
+        font-size: 14px;
+    }
+
+    .hero .hero-container .hero-img {
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero .hero-container {
+        width: 500px;
+    }
+    .hero .hero-container .hero-content {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .hero .hero-container {
+        width: 400px;
+    }
+
+    .hero .hero-container .hero-content {
+        height: 60%;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .hero .hero-container {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .hero .hero-container {
+        width: 270px;
+    }
+    .hero .hero-container .hero-content h1 {
+        font-size: 20px;
+    }
+
+    .hero .hero-container .hero-content p {
+        font-size: 12px;
+    }
+
+    .hero .hero-container .hero-content .btn {
+        font-size: 12px;
+    }
+
+    .hero .hero-container .hero-img {
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .hero .hero-container {
+        width: 260px;
+    }
+}

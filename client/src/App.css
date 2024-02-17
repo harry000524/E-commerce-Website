@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    user-select: none;
+    color: var(--text-color);
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #f3efe0;
+    --black-light: #434242;
+    --text-color: #222222;
+    --btn-color: #22a39f;
+    --text-title-color: #22a39f;
+}

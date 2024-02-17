@@ -1,0 +1,37 @@
+.user-container {
+    margin: 50px;
+    margin-top: 0;
+}
+
+.user-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titlee {
+    margin-top: 40px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--text-color);
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+.product-container-list-items-awan {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.noproductmsg {
+    margin-top: 40px;
+    font-size: 24px;
+    text-align: center;
+    color: #666;
+}

@@ -1,0 +1,34 @@
+.container {
+    margin: 50px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleee {
+    margin-top: 40px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.product-container-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.noproductmsg {
+    margin-top: 40px;
+    font-size: 24px;
+    text-align: center;
+    color: #666;
+}

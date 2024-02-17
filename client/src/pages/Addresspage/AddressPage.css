@@ -1,0 +1,60 @@
+.address-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.address-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 35px;
+}
+
+form > input {
+    outline: none;
+    border: none;
+    padding-left: 8px;
+    border-bottom: 1px solid #888;
+    height: 45px;
+    width: 300px;
+    font-size: 18px;
+}
+
+form .jpang {
+    text-align: center;
+    font-size: 18px;
+}
+
+form > input:focus {
+    border-color: #333;
+}
+
+.submit-btn {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 30px;
+    outline: none;
+    font-size: 18px;
+    border: 1px solid transparent;
+    background: var(--btn-color);
+    color: aliceblue;
+    padding: 0.75rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: aliceblue;
+    color: var(--btn-color);
+    border-color:var(--btn-color);
+}
+

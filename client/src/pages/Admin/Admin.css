@@ -1,0 +1,129 @@
+.admin-container {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: var(--primary-color);
+    display: flex;
+}
+
+.admin-container .left-navbar {
+    height: 100vh;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    background: white;
+}
+
+.admin-container .left-navbar .left-navbar-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+.left-navbar-logo {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+}
+
+.left-navbar-logo img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+hr {
+    color: black;
+    width: 100%;
+}
+
+.admin-container .left-navbar .left-navbar-wrapper .navigation {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navigation .products,
+.navigation .users,
+.navigation .orders {
+    width: 100%;
+    padding: 0.5em 0;
+    cursor: pointer;
+    transition: 150ms all;
+}
+
+.navigation .products:hover,
+.navigation .users:hover,
+.navigation .orders:hover {
+    background: var(--btn-color);
+    color: aliceblue;
+}
+
+.products:focus,
+.users:focus,
+.orders:focus {
+    background: var(--btn-color);
+}
+
+.navigation .products:hover p,
+.navigation .users:hover p,
+.navigation .orders:hover p {
+    color: aliceblue;
+}
+
+.products:focus p,
+.users:focus p,
+.orders:focus p {
+    color: aliceblue;
+}
+
+.navigation .products p,
+.navigation .users p,
+.navigation .orders p {
+    font-size: 16px;
+    text-align: center;
+    pointer-events: none;
+    transition: 150ms all;
+}
+
+.admin-logout .btn {
+    border: 1px solid aliceblue;
+    padding: 0.8em 1em;
+    background: var(--btn-color);
+    border-radius: 10px;
+    color: aliceblue;
+    cursor: pointer;
+    transition: 150ms all;
+}
+
+.logout .btn:hover {
+    background: aliceblue;
+    color: var(--btn-color);
+    border: 1px solid var(--btn-color);
+}
+
+.admin-content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation .products p,
+    .navigation .users p,
+    .navigation .orders p {
+        padding-left: 15px;
+    }
+}
